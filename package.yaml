@@ -1,0 +1,19 @@
+name:       ghc-plugin
+version:    0.1.0
+synopsis:   An example of dynamically loading Haskell modules
+github:     jwiegley/ghc-plugin
+author:     John Wiegley
+maintainer: johnw@newartisans.com
+category:   System
+license:    BSD3
+
+description:
+  An example of dynamically loading Haskell modules
+
+dependencies:
+  - base                        >= 4.9 && < 5
+  - ghc
+  - ghc-paths
+
+library:
+  source-dirs: src

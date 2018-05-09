@@ -1,0 +1,35 @@
+-- This file has been generated from package.yaml by hpack version 0.27.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: d68126bdcef1d5fe09fcb582dc154ec5332a9555b94eb6b64a526ed8bc6539cb
+
+name:           ghc-plugin
+version:        0.1.0
+synopsis:       An example of dynamically loading Haskell modules
+description:    An example of dynamically loading Haskell modules
+category:       System
+homepage:       https://github.com/jwiegley/ghc-plugin#readme
+bug-reports:    https://github.com/jwiegley/ghc-plugin/issues
+author:         John Wiegley
+maintainer:     johnw@newartisans.com
+license:        BSD3
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/jwiegley/ghc-plugin
+
+library
+  exposed-modules:
+      Plugin
+  other-modules:
+      Paths_ghc_plugin
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.9 && <5
+    , ghc
+    , ghc-paths
+  default-language: Haskell2010
